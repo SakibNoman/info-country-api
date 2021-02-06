@@ -5,11 +5,20 @@ fetch('https://restcountries.eu/rest/v2/all')
 })
 
 const countries = allCountry =>{
-    const ul = document.getElementById("countries");
-    for (let i = 0; i < allCountry.length; i++) {
-        const country = allCountry[i];
-        const li = document.createElement("li");
-        li.innerText = country.name;
-        ul.appendChild(li)
+    const countriesDiv = document.getElementById("countries");
+    for (let i = 0; i < 100; i++) {
+        const countryDiv = allCountry[i];
+        const div = document.createElement("div");
+        const h2 = document.createElement("h2");
+        const h4 = document.createElement("h4");
+
+        h2.innerText = countryDiv.name;
+        h4.innerText = countryDiv.capital;
+
+        div.appendChild(h2);
+        div.appendChild(h4);
+
+        countriesDiv.appendChild(div)
+        
     }
 }
