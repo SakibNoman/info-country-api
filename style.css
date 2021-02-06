@@ -1,0 +1,15 @@
+/* #countries{
+    height: 200px;
+    width: 200px;
+    box-shadow: 1px 1px 10px gray;
+    padding: 10px;
+
+} */
+body{
+    margin-left: 80px;
+}
+img{
+    height: 60px;
+    width: 100px;
+    border: 1px solid gray;
+}
